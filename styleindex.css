@@ -86,20 +86,6 @@ section {
     display: flex;
 }
 
-.objeto {
-    background-color: var(--primaryColor);
-    margin: 2%;
-    padding: 2%;
-    border-radius: 20px;
-    justify-content: flex-start;
-    border: 2px solid var(--textColor);
-    position: relative;
-}
-
-.objeto:hover {
-    top: 2px;
-    right: 2px;
-}
 
 .boton {
     font-family: 'Roboto', sans-serif;

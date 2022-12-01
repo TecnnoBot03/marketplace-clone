@@ -129,6 +129,17 @@ section {
     display: flex;
     justify-content: space-between;
 }
+.search {
+    font-family: 'Roboto';
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--secondaryColor);
+    border: 0;
+    border-radius: 10px;
+    color: var(--buttonColor);
+    width: 30%;
+}
 
 .infoCarrito {
     padding: 2%;
@@ -159,3 +170,21 @@ section {
     border-radius: 10px;
     color: var(--buttonColor);
 }
+
+body::-webkit-scrollbar {
+    background-color: var(--primaryColor);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-button {
+    background-color: var(--buttonColor);
+}
+
+body::-webkit-scrollbar-button:active {
+    background-color: var(--thirdColor);
+}
+
