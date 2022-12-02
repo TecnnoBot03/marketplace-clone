@@ -102,7 +102,9 @@ li > a {
     width: 30%;
 }
 
-
+.hide {
+    display: none;
+}
 
 /* Estilos del footer */
 
