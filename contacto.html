@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
     <link rel="stylesheet" href="./css/basicStyles.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <style rel="stylesheet">
         :root {
             --primaryColor: #000;
@@ -43,16 +43,17 @@
     </aside>
     <main class="main">
         <section class="formContainer">
-            <form action="">
-                <label for="formName">Name</label>
+            <form action="" class="formulario">
+                <label for="formName" id="labelName">Name</label>
                 <input type="text" id="formName">
-                <label for="formEmail">Email</label>
+                <label for="formEmail" id="labelEmail">Email</label>
                 <input type="email" id="formEmail">
-                <label for="formMessage">Message</label>
-                <input type="text" id="formMessage">
+                <label for="formMessage" id="labelMessage">Message</label>
+                <textarea name="formMessage" id="formMessage" cols="32" rows="5"></textarea>
+                <button id="submitForm">Submit</button>
             </form>
-            <figure>
-                <img src="" alt="marketplace stock photo">
+            <figure class="marketPhoto">
+                <img src="./img/7794656_stock-photo-marketplace.jpg" alt="marketplace stock photo">
             </figure>
         </section>
     </main>
