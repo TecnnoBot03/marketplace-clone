@@ -1,0 +1,101 @@
+.formContainer {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.formulario {
+    grid-column: 1/ 5;
+    grid-row: 1/ 3;
+}
+
+.marketPhoto {
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.formulario {
+    display: grid;
+    grid-template: 3fr 3fr 1fr 5fr 2fr / 2fr 5fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: start;
+    margin: 20px;
+}
+
+#labelName {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#formName {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 65%;
+    font-family: 'Roboto';
+    background-color: var(--backgroundColor);
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--buttonColor);
+}
+
+#labelEmail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#formEmail {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 65%;
+    background-color: var(--backgroundColor);
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--buttonColor);
+}
+
+#labelMessage {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#formMessage {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    resize: none;
+    background-color: var(--backgroundColor);
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--buttonColor);
+    width: 75%;
+}
+
+#submitForm {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+#submitForm {
+    padding: 10px;
+    background-color: var(--buttonColor);
+    color: var(--primaryColor);
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+

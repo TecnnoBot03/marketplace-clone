@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
     <link rel="stylesheet" href="./css/basicStyles.css">
-    <link rel="stylesheet" href="./css/tienda.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <style rel="stylesheet">
         :root {
             --primaryColor: #000;
@@ -34,7 +34,7 @@
         </nav>
         
     </header>
-    <aside class="infoCarrito"class="hide" class="hide2">
+    <aside class="infoCarrito" class="hide">
         <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores quibusdam nisi quos laudantium eius culpa commodi alias! Animi mollitia id earum exercitationem nisi unde fugit incidunt reprehenderit reiciendis magni.
         Porro assumenda voluptatibus minus sequi odit! Sint in quo natus harum laboriosam possimus! Totam ab earum molestias officia consequatur temporibus unde ratione voluptatum ullam at hic sint eaque, maiores voluptatem.
         Illo, consequuntur facilis soluta accusamus nisi saepe quasi, explicabo hic quibusdam neque doloribus repellat eum veritatis qui est aut eos ipsum optio assumenda dolores? Nulla minima nostrum ipsam eum dolor.
@@ -42,7 +42,25 @@
         Nemo quas molestiae tempore quaerat illo debitis explicabo repudiandae! Libero esse totam exercitationem, ad repellendus dolor reiciendis labore iure, velit deserunt id fugiat odit culpa error sequi rerum officia ab!</p>
     </aside>
     <main class="main">
-        <section class="principal"></section>
+        <section class="formContainer">
+            <form action="" class="formulario">
+                <label for="formName" id="labelName">Name</label>
+                <input type="text" id="formName">
+                <label for="formEmail" id="labelEmail">Email</label>
+                <input type="email" id="formEmail">
+                <label for="formMessage" id="labelMessage">Message</label>
+                <textarea name="formMessage" id="formMessage" cols="32" rows="5"></textarea>
+                <button id="submitForm">Submit</button>
+            </form>
+            <figure class="marketPhoto">
+                <img src="./img/7794656_stock-photo-marketplace.jpg" alt="marketplace stock photo">
+            </figure>
+        </section>
+        <section>
+            <p>
+                Si necesitas mas ayuda puedes escribir al correo <a href="">ejemplo@ejemplodominio.com</a>
+            </p>
+        </section>
     </main>
     <footer class="footer">
         <img src="" alt="">
@@ -52,6 +70,5 @@
             <li class="red">GitHub</li>
         </ul>
     </footer>
-    <script src="./script.js"></script>
 </body>
 </html>

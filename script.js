@@ -15,6 +15,24 @@ let herramientasVender = [
         nombre: "Martillo Neumatico",
         precio: 400,
         categoria: "martillos",
+        imagen: "asfsfbreb"
+    },
+    sierra = {
+        nombre: "Sierra de mesa",
+        precio: 600,
+        categoria: "sierras",
+        imagen: "asfsfbreb"
+    },
+    pulidora = {
+        nombre: "Pulidora de bateria",
+        precio: 150,
+        categoria: "pulidoras",
+        imagen: "asfsfbreb"
+    },
+    martilloNeumatico = {
+        nombre: "Martillo Neumatico",
+        precio: 400,
+        categoria: "martillos",
         iamgen: "asfsfbreb"
     }
 ];
@@ -23,7 +41,9 @@ const main = document.querySelector(".main");
 
 const principal = document.querySelector(".principal");
 
+const carritoCompras = document.querySelector('.carrito');
 
+const infoCarrito = document.querySelector('.infoCarrito');
 
 for (i=0; i<herramientasVender.length; i++) {
     let newDiv = document.createElement('div');
@@ -40,8 +60,14 @@ for (i=0; i<herramientasVender.length; i++) {
     newDiv.classList = "objeto";
     button.classList = 'boton'
     button.id = i;
-    const boton1 = document.querySelector(`#${i}`);
 }
+
+infoCarrito.classList.toggle('hide')
+
+carritoCompras.addEventListener("click", ()=>{
+    infoCarrito.classList.toggle('hide')
+    console.log("you")
+})
 
 
 
