@@ -4,25 +4,46 @@ const principal = document.querySelector(".principal");
 
 for (i=0; i<herramientasVender.length; i++) {
     let newDiv = document.createElement('div');
-    let newP = document.createElement('p');
-    newP.innerText = herramientasVender[i].nombre;
-    let newP2 = document.createElement('p');
-    newP2.innerText = herramientasVender[i].precio;
-    let newP3 = document.createElement('p');
-    newP3.innerText = herramientasVender[i].categoria;
-    let button = document.createElement('button')
-    button.innerText = 'Agregar al carrito';
-    newDiv.append(newP, newP2, newP3, button);
+    newDiv.innerHTML = `
+    <div class="objeto">
+        <p class="nombre">${herramientasVender[i].nombre}</p>
+        <p class="precio">${herramientasVender[i].precio}</p>
+        <p class="categoria">${herramientasVender[i].categoria}</p>
+        <button data-id="${i}" class="boton">Agregar al carrito</button>
+    </div>
+    `;
     principal.append(newDiv);
-    newDiv.classList = "objeto";
-    button.classList = 'boton'
-    button.id = i;
+    botonesProductos.push({
+        boton: i,
+        producto: herramientasVender[i]
+    });
 }
 
+principal.addEventListener('click', e => {
+    agregarCarrito(e);
+})
 
+const agregarCarrito = e => {
+    if (e.target.classList.contains('boton')) {
+        setCarrito(e.target.parentElement);
+    }
+    e.stopPropagation();
+}
 
+const setCarrito = elementoDelCarrito => {
+    console.log(elementoDelCarrito);
+    const producto = {
+        id: elementoDelCarrito.querySelector('.boton').dataset.id,
+        nombre: elementoDelCarrito.querySelector('.nombre').textContent,
+        precio: elementoDelCarrito.querySelector('.precio').textContent,
+        cantidad: 1
+    }
 
+    if (carritoDeCompras.hasOwnProperty(producto.id)) {
+        producto.cantidad = carritoDeCompras[producto.id].cantidad + 1
+    }
 
+    carritoDeCompras[producto.id] = {...producto};
 
-
-
+    console.log(producto);
+}

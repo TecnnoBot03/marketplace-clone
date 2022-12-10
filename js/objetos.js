@@ -36,3 +36,7 @@ let herramientasVender = [
         iamgen: "asfsfbreb"
     }
 ];
+
+let carritoDeCompras = {};
+
+let botonesProductos = [];
