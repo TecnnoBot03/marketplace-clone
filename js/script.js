@@ -13,10 +13,6 @@ for (i=0; i<herramientasVender.length; i++) {
     </div>
     `;
     principal.append(newDiv);
-    botonesProductos.push({
-        boton: i,
-        producto: herramientasVender[i]
-    });
 }
 
 principal.addEventListener('click', e => {
@@ -39,11 +35,8 @@ const setCarrito = elementoDelCarrito => {
         cantidad: 1
     }
 
-    if (carritoDeCompras.hasOwnProperty(producto.id)) {
-        producto.cantidad = carritoDeCompras[producto.id].cantidad + 1
-    }
-
-    carritoDeCompras[producto.id] = {...producto};
+    carritoDeCompras.push(producto);
+    
 
     console.log(producto);
 }

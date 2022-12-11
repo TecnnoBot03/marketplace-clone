@@ -37,6 +37,6 @@ let herramientasVender = [
     }
 ];
 
-let carritoDeCompras = {};
+let carritoDeCompras = [];
 
 let botonesProductos = [];

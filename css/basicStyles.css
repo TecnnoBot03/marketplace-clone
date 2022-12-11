@@ -153,6 +153,8 @@ section {
     background-color: var(--primaryColor);
     color: var(--buttonColor);
     width: 50%;
+    height: 50%;
+    overflow-y: scroll;
 }
 
 .texto {

@@ -6,5 +6,14 @@ infoCarrito.classList.toggle('hide')
 
 carritoCompras.addEventListener("click", ()=>{
     infoCarrito.classList.toggle('hide')
-    console.log("you")
+    for (i=0; i<carritoDeCompras.length; i++) {
+        let newDiv = document.createElement('div');
+        newDiv.innerHTML = `
+        <div class="objeto">
+            <p class="nombre">${carritoDeCompras[i].nombre}</p>
+            <p class="precio">${carritoDeCompras[i].precio}</p>
+        </div>
+        `;
+        infoCarrito.append(newDiv);
+    }
 })
