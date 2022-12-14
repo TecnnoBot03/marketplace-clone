@@ -14,6 +14,7 @@
     justify-content: flex-start;
     border: 2px solid var(--textColor);
     position: relative;
+    display: flex;
 }
 
 .objeto:hover {
@@ -26,13 +27,18 @@
     background-color: var(--secondaryColor);
     color: var(--buttonColor);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .boton:hover {
     background-color: var(--thirdColor);
 }
 
-
+.productImage {
+    width: 45%;
+    margin: 10px;
+    border-radius: 20px;
+}
 
 

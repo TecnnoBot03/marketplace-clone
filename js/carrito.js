@@ -10,7 +10,8 @@ carritoCompras.addEventListener("click", ()=>{
         let newDiv = document.createElement('div');
         newDiv.innerHTML = `
         <div class="objeto">
-            <p class="nombre">${carritoDeCompras[i].nombre}</p>
+            <p class="nombre">${carritoDeCompras[i].nombre + " "}</p>
+            <p>$</p>
             <p class="precio">${carritoDeCompras[i].precio}</p>
         </div>
         `;

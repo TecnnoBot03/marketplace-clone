@@ -6,9 +6,12 @@ for (i=0; i<herramientasVender.length; i++) {
     let newDiv = document.createElement('div');
     newDiv.innerHTML = `
     <div class="objeto">
-        <p class="nombre">${herramientasVender[i].nombre}</p>
-        <p class="precio">${herramientasVender[i].precio}</p>
-        <p class="categoria">${herramientasVender[i].categoria}</p>
+        <div class="objetoContainer">
+            <p class="nombre">${herramientasVender[i].nombre}</p>
+            <p class="precio">${herramientasVender[i].precio}</p>
+            <p class="categoria">${herramientasVender[i].categoria}</p>
+        </div>
+        <img class="productImage" src="${herramientasVender[i].imagen}">
         <button data-id="${i}" class="boton">Agregar al carrito</button>
     </div>
     `;
