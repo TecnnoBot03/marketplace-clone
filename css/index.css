@@ -37,3 +37,13 @@
     grid-column: 1/5;
     grid-row: 3/4;
 }
+
+#historial {
+    margin: 2%;
+    padding: 2%;
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
